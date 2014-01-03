@@ -10,39 +10,21 @@
  5. 6x AA rechargeable batteries.
  6. 2x AAA rechargeable batteries.
  
-## Basic Setup (OSX)
+## Projects
 
-Tested on OSX 10.9, should work with previous versions as well based on instructions from [python-ev3](https://github.com/topikachu/python-ev3).
+This is the list of resources and projects I've found so far:
 
-1. Download system image from [Source Forge](http://sourceforge.net/projects/python-ev3/files/python-ev3.img.tar.gz/download) and unzip it:
+1. Lego Mindstorms EV3 source code: [github.com](https://github.com/mindboards/ev3sources) (announced on [BotBench](http://botbench.com/blog/2013/07/31/lego-mindstorms-ev3-source-code-available/)).
+2. Scripts for setting up the ev3dev distribution: [github.com](https://github.com/mindboards/ev3dev]). 
+3. Programming EV3 brick with Python: [github.com](https://github.com/topikachu/python-ev3).
+4. API for the EV3 brick usable from desktop, Windows Phone and WinRT: [codeplex.com](legoev3.codeplex.com).
+5. Control EV3 tanks with an xbox controller over bluetooth: [github.com](https://github.com/andrew/node-ev3-robot).
+6. Control EV3 robot without hacking into intelligent brick (over bluetooth): [github.com](https://github.com/wenchaojiang/ev3-Nodejs-bluetooth-Api).
+7. Compile Qt 5 (qtbase) for EV3 on Linux: [blogspot.fr](http://broija.blogspot.fr/2013/11/compile-qt-5-qtbase-for-lego-mindstorms.html).
 
-        $ curl -L http://sourceforge.net/projects/python-ev3/files/python-ev3.img.tar.gz/download | tar xv
-2. Copy downloaded image to sd card. First, get the device `<NUMBER>` by inspecting output from:
+## Documentation
 
-        $ diskutil list 
-        
-   _Note: You may need to call `unmountDisk` instead of `unmount` if sd card comes with valid filesystem._
-   
-        $ sudo diskutil unmount /dev/disk<NUMBER>
-        $ sudo dd if=./python-ev3.img of=/dev/rdisk<NUMBER> bs=1m
-        $ sudo diskutil eject /dev/disk<NUMER>        
-3. Turn off your robot, insert micro sd card and turn it on again.
-4. First boot might be time consuming.
-5. Connect robot via USB cable.
-6. Establish connection:
-        
-        $ ssh root@10.0.1.1
-        
-   Password is *password*.
-7. Turning off:
-
-        root@10.0.1.1$ shutdown -h now
-
-## Other projects
-
-This is the list of resources / projects I've found so far:
-
-1. Programming EV3 brick with Python: [python-ev3](https://github.com/topikachu/python-ev3).
+1. Lego Mindstorms EV3: [github.com](http://topikachu.github.io/python-ev3/)
 
 ## Contributions
 
